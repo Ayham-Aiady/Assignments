@@ -1,0 +1,16 @@
+#home{
+    background-image: url(bg-img.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+    width: 100%;
+    background-size: cover;
+}
+#about{
+    background-image: url(bg-img.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+    width: 100%;
+    background-size: cover;
+}
