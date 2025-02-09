@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#one{
+border-color: aquamarine;
+border-radius: 1px;
+border-style: solid;
+margin: 10px 0 10px 0;
+}
+#two{
+    border-color: aquamarine;
+border-radius: 1px;
+
+border-style: solid;
+}
+#three{
+    border-color: aquamarine;
+    border-radius: 1px;
+    
+    border-style: solid;
+}
+
+#ex{
+    border: 1px solid brown;
+    height: 100vh;
+    box-sizing: border-box;
+    width: 100%;
+}
+img{
+    
+    width: 40%;
+    border: 1px solid brown;
+
+}
+span{
+    width: 60%;
+    border: 1px solid brown;
+}
