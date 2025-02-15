@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+}
+#nav {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  border: 1px solid rgb(35, 231, 199);
+  background-color: brown;
+}
+.content {
+  display: flex;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 200px;
+}
+#parent {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  flex-wrap: wrap;
+
+  max-width: 750px;
+}
+.flex div {
+  border: 1px solid rebeccapurple;
+  /* width: 100px; */
+  height: 100px;
+  flex: 1 1 150px;
+}
