@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+}
+body{
+    height: 200vh;
+}
+.container{
+    position: relative;
+}
+.abs{
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    top: 0px
+}
+#video-background{
+
+    width: 100%;
+    opacity: 0.5;
+    object-fit: cover;
+   
+}
