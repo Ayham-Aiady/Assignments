@@ -1,0 +1,214 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Noto Naskh Arabic', serif;
+}
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-family: 'Noto Naskh Arabic', serif;
+    color: #FFFFFF;
+    /* overflow-y: scroll; */
+    overflow: visible;
+    /* height: 100vh; */
+    /* display: flex; */
+    background-color: rgb(51, 52, 52);
+}
+
+header{
+  
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+    /* height: 20px; */
+    padding: 10px;
+    padding: 20px 45px;
+    /* margin-top: 8px; */
+    flex-wrap: wrap;
+    
+    width: 100%;
+    height: 10rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.sticky.header {
+  height: 4rem;
+  background-color: #152630;
+}
+.see{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+.sign{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+#sin{
+
+   padding: 9px 40px;
+    color: #fff;
+    /* background-color: #02ac82; */
+    background-image: linear-gradient(to right, #2ab56a, #00b48f, #00b1ad, #00acc2, #00a5cc);
+    border-radius: 20px;
+    font-weight: bolder;
+}
+#sin:hover{
+  background-image: none;
+    background-color: #2be4b0;
+}
+
+#video-background {
+    position: absolute;
+    box-shadow: 5px 80px 30px rgb(17, 17, 17);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+        overflow: hidden; 
+    
+  }
+  .show{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end ;
+    margin-top: 8%;
+    padding: 0 45px;
+    width: 300px;
+    margin-left: auto;
+    gap: 10px;
+    /* position: absolute; */
+   
+  }
+  #shahid-img{
+    width: 95px;
+    height: 26px;
+  }
+  #icon1{
+    width: 18px;
+    height: 18px;
+    margin: 0 0 0 6px;
+  }
+  .dot{
+    color: #00CC99;
+  }
+  #BI{
+    width: 20px;
+    height: 20px;
+  }
+  #font{
+    font-weight: bolder;
+  }
+    
+  
+  .cl{
+display: flex;
+flex-direction: column;
+  }
+  .row{
+    display: flex;
+    flex-direction: row;
+    border-radius: 40%;
+    background-color:rgba(255, 255, 255, 0.16);
+    padding: 10px 20px;
+    border-radius: 30px;
+    gap: 10px;
+      }
+      #arrow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #arrow1{
+        border-radius: 50%;
+        padding: 0;
+        /* background-color:#00CC99; */
+        background-image: linear-gradient(to right, #2ab56a, #00b48f, #00b1ad, #00acc2, #00a5cc);
+        width: 51px;
+        height: 51px;
+        color: #fff;
+        border: 0; 
+        padding: 0.6rem 0.7rem; 
+        font-size: 1.2rem; 
+        font-weight: bold; 
+        
+        cursor: pointer; 
+        transition: background-color 0.3s ease;
+      }
+     
+      a:hover {
+        color: #00CC99;
+      }
+     #s-1{
+        font-weight: bold; 
+        margin-left: auto;
+        font-weight: bolder;
+      }
+     #s-2{
+            font-weight: lighter;
+        }
+        #main{
+            color: #00CC99;
+        }
+        .abs{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            /* position: absolute; */
+            opacity: 0.6;
+            width: 100%;
+            margin-top: 230px;
+        }
+        .a-2{
+            width: 128px;
+            height: 52px;
+
+        }
+        .a-2 img{
+            width: 128px;
+            height: 52px;
+        }
+        .t2{
+            display: flex;
+           flex-direction: column;
+           width: 100%;
+            align-items: flex-end ;
+          
+            padding: 0 45px;
+           
+            margin-left: auto;
+            margin-bottom: 10px;
+        }
+        .row1{
+            display: flex;
+            gap: 8px;
+            overflow: auto;
+        }
+        .imm{
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 236px;
+        }
+        .imm img{
+         
+         
+            /* width:236px ; */
+            height: 133px;
+            border-radius: 4px;
+        }
+        .imm div{
+            align-items: flex-end ;
+            margin-left: auto;
+        }
