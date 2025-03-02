@@ -1,0 +1,29 @@
+.flex{
+    display: flex;
+    flex-direction: column;
+
+}
+.child{
+    height: 100px;
+    width:100px ;
+    background-color: rgb(81, 81, 155);
+    animation: mymove 3s infinite;
+}
+
+@keyframes mymove {
+    0%{
+        transform: translate(0,0);
+    }
+    20%{
+        transform: translate(100px,0);
+    }
+    40%{
+        transform: translate(100px,100px);
+    }
+    60%{
+        transform: translate(0,100px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
