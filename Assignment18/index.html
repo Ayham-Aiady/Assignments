@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-black p-3">
+      <div class="d-flex container-fluid justify-content-between">
+        <div class="d-flex column-gap-3">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent2"
+            aria-controls="navbarSupportedContent2"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+          <i class="fa-solid fa-magnifying-glass" style="color: #c2c2c2;"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+          <a
+            class="navbar-brand bs-light-text-emphasis text-white fw-bold fs-5"
+            href="#"
+            >Explore
+            <svg
+              id="svg1"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="16px"
+              height="17px"
+              viewBox="0 0 16 17"
+              style="enable-background: new 0 0 16 17"
+              xml:space="preserve"
+            >
+              <g>
+                <g>
+                  <path
+                    d="M8,16.5c-4.4,0-8-3.6-8-8s3.6-8,8-8s8,3.6,8,8S12.4,16.5,8,16.5z M8,1.5c-3.9,0-7,3.1-7,7c0,3.9,3.1,7,7,7 s7-3.1,7-7C15,4.6,11.9,1.5,8,1.5z"
+                  ></path>
+                </g>
+                <g>
+                  <path
+                    d="M8,10l2.6-2.6L11.2,8L8,11.2L4.8,8l0.6-0.6L8,10z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <form class="d-flex" role="search">
+            <input
+              id="search"
+              class="form-control me-3 bg-black bb rounded-0"
+              type="search"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+          </form>
+        </div>
+        </div>
+
+
+
+        <div
+          id="logoo"
+          class="grid-col-2 display-flex flex-justify-center flex-align-center"
+        >
+          <a
+            id="header-logo"
+            href="#"
+            class="usa-logo tablet:display-block margin-0"
+            style="width: 60px"
+          >
+            <img
+              fetchpriority="high"
+              width="60"
+              height="50.58"
+              alt="NASA Logo"
+              src="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo@2x.png"
+              srcset="
+                https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg
+              "
+            />
+          </a>
+        </div>
+
+
+        <div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon" style="color: #c2c2c2;"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="navbar-brand dropdown-toggle text-white fw-bold fs-5"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  href="#"
+                  >News & Events</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="navbar-brand dropdown-toggle text-white fw-bold fs-5"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  href="#"
+                  >Multimedia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="navbar-brand text-white fw-bold fs-5"
+                  href="#"
+                  role="button"
+                >
+                  NASA+<button
+                    type="button"
+                    class="btn btn-outline-danger text-white p-1 py-0 fw-lighter mb-1"
+                  >
+                    Live
+                  </button>
+                </a>
+                <!-- <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul> -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ..................................................................................................... -->
+
+    <div id="a" class="a card bg-dark text-white rounded-0">
+      <div class="a dark-overlay"></div>
+      <img
+        id="bg-img"
+        src="im2-mission-low-lunar-orbit.webp"
+        class="card-img"
+        alt="Background"
+      />
+      <div
+        class="card-img-overlay d-col justify-content-start align-items-center"
+      >
+        <!-- <div class="container-fluid text-white  d-col justify-content-start align-items-center" 
+     style="background: url('im2-mission-low-lunar-orbit.webp') no-repeat center center/cover; height: 90vh;"> -->
+
+        <div id="main" class="d-col ml-5">
+          <h1 class="display-1 lh-1 fw-bold">Intuitive Machines</h1>
+          <h1 class="display-1 lh-1 fw-semibold">Lunar Landing</h1>
+          <p class="lh-2 fw-bold">
+            Intuitive Machines’ lunar lander touched down on the Moon at
+            approximately 12:30<br />
+            p.m. EST on Thursday, March 6. The company’s IM-2 mission is part of
+            NASA’s<br />
+            Commercial Lunar Payload Services initiative.
+          </p>
+          <button type="button" class="btn btn-danger btn-lg fw-bold">
+            Misson Updates
+          </button>
+        </div>
+        <div id="main-footer" class="container-fluid row d-flex column-gap-3 flex-wrap  mt-5">
+          <div class="bb py-4 d-col col-md-3 col-sm-6  border-top">
+            <p class="text-break bd fw-lighter" aria-disabled="true">
+              LUNAR SCIENCE
+            </p>
+            <a
+              class="navbar-brand bs-light-text-emphasis text-white fw-bold fs-6"
+              href="#"
+              >Tracking Luner Landing
+
+              <svg
+                class="svg1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="#c23939"
+                  d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="bb py-4 d-col col-md-3 col-sm-6  border-top">
+            <p class="bd fw-lighter">LUNAR SCIENCE</p>
+            <a
+              class="navbar-brand bs-light-text-emphasis text-white fw-bold"
+              href="#"
+              >Scouting the Moon's Surface
+              <svg
+                class="svg1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="#c23939"
+                  d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div class="bb py-4 d-col col-md-3 col-sm-6 border-top">
+            <p class="bd fw-lighter">LUNAR ECONOMY</p>
+            <a
+              class="navbar-brand bs-light-text-emphasis text-white fw-bold"
+              href="#"
+              >Commercial Partners
+              <svg
+                class="svg1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="#c23939"
+                  d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ..................................................................................................... -->
+
+    <div class="sec-main px-5">
+      <div class="container px-5 w d-col  mt-5">
+        <div class="contaner row d-flex flex-wrap justify-content-start flex-sm-wrap py-5">
+          <div class="col-md-6 ">
+            <h1
+              class="navbar-brand bs-light-text-emphasis text-black fw-bold fs-1"
+              href="#"
+            >
+              Featured News
+            </h1>
+          </div>
+
+          <div class="col-md-6  d-flex justify-content-end align-items-end">
+            <h1
+              class="navbar-brand d-flex justify-content-end align-items-end bs-light-text-emphasis text-black fw-bold fs-5"
+              href="#"
+            >
+              More NASA News&nbsp;
+              <svg
+                class="svg1 mt-2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="#c23939"
+                  d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                />
+              </svg>
+            </h1>
+          </div>
+        </div>
+        <div class="d-flex row flex-wrap flex-sm-nowrap gap-3">
+         
+          <div class="col-md-6 col-sm-3">
+            <div class="bg-image1">
+              <div
+                class="p-3 d-flex flex-column justify-content-between align-items-start"
+                style="height: 100%"
+              >
+                <div>
+                  <span class="text-white bd"
+                    ><svg
+                      class="svg-card square-2 margin-right-1"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      width="16px"
+                      height="16px"
+                      viewBox="0 0 16 16"
+                      style="enable-background: new 0 0 16 16"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          d="M8,0c4.4,0,7.9,3.5,8,7.9c0.1,4.5-3.5,8.1-7.9,8.1c-4.5,0-8-3.6-8.1-7.9C-0.1,3.6,3.6,0,8,0z M0.8,8 c0,4,3.2,7.2,7.2,7.2c4,0,7.2-3.2,7.2-7.2c0-4-3.3-7.2-7.2-7.2C4,0.8,0.8,4,0.8,8z"
+                        ></path>
+                        <path
+                          d="M11.2,4c0,2.7,0,5.3,0,8c-2.1,0-4.3,0-6.4,0c0,0,0,0,0-0.1c0-1.8,0-3.6,0-5.4c0-0.8,0-1.6,0-2.4 C4.8,4,4.8,4,4.9,4C6.2,4,7.6,4,9,4C9.7,4,10.4,4,11.2,4C11.1,4,11.2,4,11.2,4z M9.6,5.6c-1.1,0-2.1,0-3.2,0c0,0,0,0,0,0.1 c0,0.5,0,1,0,1.5c0,0.1,0,0.1,0.1,0.1c1,0,2,0,3.1,0c0,0,0.1,0,0.1-0.1C9.6,6.6,9.6,6.2,9.6,5.6C9.6,5.6,9.6,5.6,9.6,5.6z M6.4,8.8C6.4,8.8,6.4,8.8,6.4,8.8c1.1,0,2.1,0,3.1,0c0.1,0,0.1,0,0.1-0.1c0-0.2,0-0.4,0-0.7c0,0,0,0,0-0.1C8.5,8,7.5,8,6.4,8 C6.4,8.3,6.4,8.5,6.4,8.8z M8.8,10.4C8.8,10.4,8.8,10.4,8.8,10.4c0-0.3,0-0.5,0-0.7c0-0.1,0-0.1-0.1-0.1c-0.5,0-1,0-1.5,0 c-0.3,0-0.5,0-0.8,0c0,0,0,0-0.1,0c0,0.3,0,0.5,0,0.8C7.2,10.4,8,10.4,8.8,10.4z"
+                        ></path>
+                      </g>
+                    </svg>
+                    NEWS RELEASE</span
+                  >
+                </div>
+                <div>
+                  <span class="text-white bd">6 MIN READ</span>
+                  <h1 class="bs-light-text-emphasis text-white fw-bold fs-4">
+                    NASA Launches Missions to Study Sun, Universe’s Beginning
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="bg-image2">
+              <div
+                class="p-3 d-flex flex-column justify-content-between align-items-start"
+                style="height: 100%"
+              >
+                <div>
+                  <span class="text-white bd"
+                    ><svg
+                      version="1.1"
+                      class="svg-card square-2 margin-right-1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      width="16px"
+                      height="16px"
+                      viewBox="0 0 16 16"
+                      style="enable-background: new 0 0 16 16"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <g>
+                          <path
+                            d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"
+                          ></path>
+                          <path
+                            d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"
+                          ></path>
+                        </g>
+                      </g>
+                    </svg>
+                    ARTICLE</span
+                  >
+                </div>
+                <div>
+                  <span class="text-white bd">4 MIN READ</span>
+                  <h1 class="bs-light-text-emphasis text-white fw-bold fs-4">
+                    Discovery Alert: ‘Super-Earth’ Swings from Super-Heated to
+                    Super-Chill
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex flex-column gap-3">
+            <div class="bg-image3">
+              <div
+                class="p-3 d-flex flex-column justify-content-between align-items-start"
+                style="height: 100%"
+              >
+                <div>
+                  <span class="text-white bd"
+                    ><svg
+                      version="1.1"
+                      class="svg-card square-2 margin-right-1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      width="16px"
+                      height="16px"
+                      viewBox="0 0 16 16"
+                      style="enable-background: new 0 0 16 16"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <g>
+                          <path
+                            d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"
+                          ></path>
+                          <path
+                            d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"
+                          ></path>
+                        </g>
+                      </g>
+                    </svg>
+                    ARTICLE</span
+                  >
+                </div>
+                <div>
+                  <span class="text-white bd">6 MIN READ</span>
+                  <h1 class="bs-light-text-emphasis text-white fw-bold fs-4">
+                    Team Preps to Study Dark Energy via Exploding Stars With
+                    NASA’s Roman
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="bg-image4">
+              <div
+                class="p-3 d-flex flex-column justify-content-between align-items-start"
+                style="height: 100%"
+              >
+                <div>
+                  <span class="text-white bd"
+                    ><svg
+                      version="1.1"
+                      class="svg-card square-2 margin-right-1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      width="16px"
+                      height="16px"
+                      viewBox="0 0 16 16"
+                      style="enable-background: new 0 0 16 16"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <g>
+                          <path
+                            d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"
+                          ></path>
+                          <path
+                            d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"
+                          ></path>
+                        </g>
+                      </g>
+                    </svg>
+                    ARTICLE</span
+                  >
+                </div>
+                <div>
+                  <span class="text-white bd">2 MIN READ</span>
+                  <h1 class="bs-light-text-emphasis text-white fw-bold fs-4">
+                    NASA Earns Best Place to Work in Government for 13th
+                    Consecutive Year
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex row mt-4 small-div flex-wrap flex-sm-nowrap gap-2">
+          <div class="col-md-3 d-flex">
+            <div class="d-flex align-items-end pr-5">
+              <img class="small-img" src="small-img1.webp" />
+            </div>
+            <div class="d-flex flex-column gap-1 pad-left">
+              <span class="text-black bd">6 MIN READ</span>
+              <h7 class="bs-light-text-emphasis text-black fw-bold lh-1"
+                >NASA-ISRO Mission Will Map Farmland From Planting to Harvest
+              </h7>
+              <span class="bd" style="color: #4e4e4e"
+                ><svg
+                  version="1.1"
+                  class="svg-card1 square-2 margin-right-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="16px"
+                  height="16px"
+                  viewBox="0 0 16 16"
+                  style="enable-background: new 0 0 16 16"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"
+                      ></path>
+                      <path
+                        d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+                ARTICLE</span
+              >
+            </div>
+          </div>
+          <div class="col-md-3 d-flex">
+            <div class="d-flex align-items-start pr-5">
+              <img class="small-img" src="small-img2.webp" />
+            </div>
+            <div class="d-flex flex-column gap-1 pad-left">
+              <span class="text-black bd">1 MIN READ</span>
+              <h7 class="bs-light-text-emphasis text-black fw-bold lh-1"
+                >Moon Mascot: NASA Artemis II ZGI Design Challenge
+              </h7>
+              <span class="bd" style="color: #4e4e4e"
+                ><svg
+                  version="1.1"
+                  class="svg-card1 square-2 margin-right-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="16px"
+                  height="16px"
+                  viewBox="0 0 16 16"
+                  style="enable-background: new 0 0 16 16"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"
+                      ></path>
+                      <path
+                        d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+                ARTICLE</span
+              >
+            </div>
+          </div>
+          <div class="col-md-3 d-flex">
+            <div class="d-flex align-items-end pr-5">
+              <img class="small-img" src="small-img3.png" />
+            </div>
+            <div class="d-flex flex-column gap-1 pad-left">
+              <span class="text-black bd">6 MIN READ</span>
+              <h7 class="bs-light-text-emphasis text-black fw-bold lh-1"
+                >NASA’s Webb Peers Deeper into Mysterious Flame Nebula
+              </h7>
+              <span class="bd" style="color: #4e4e4e"
+                ><svg
+                  version="1.1"
+                  class="svg-card1 square-2 margin-right-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="16px"
+                  height="16px"
+                  viewBox="0 0 16 16"
+                  style="enable-background: new 0 0 16 16"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"
+                      ></path>
+                      <path
+                        d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+                ARTICLE</span
+              >
+            </div>
+          </div>
+          <div class="col-md-3 d-flex">
+            <div class="d-flex align-items-start pr-5">
+              <img class="small-img" src="small-img-4.jpg" />
+            </div>
+            <div class="d-flex flex-column gap-1 pad-left">
+              <span class="text-black bd">5 MIN READ</span>
+              <h7 class="bs-light-text-emphasis text-black fw-bold lh-1"
+                >What’s Up: March 2025 Skywatching Tips from NASA
+              </h7>
+              <span class="bd" style="color: #4e4e4e"
+                ><svg
+                  version="1.1"
+                  class="svg-card1 square-2 margin-right-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="16px"
+                  height="16px"
+                  viewBox="0 0 16 16"
+                  style="enable-background: new 0 0 16 16"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M8,0C3.5,0-0.1,3.7,0,8.2C0.1,12.5,3.6,16,8,16c4.4,0,8-3.6,8-8C16,3.5,12.4,0,8,0z M8,15.2 C4,15.2,0.8,12,0.8,8C0.8,4,4,0.8,8,0.8c3.9,0,7.2,3.2,7.2,7.1C15.2,11.9,12,15.2,8,15.2z"
+                      ></path>
+                      <path
+                        d="M5.6,12c0.8-0.8,1.6-1.6,2.4-2.4c0.8,0.8,1.6,1.6,2.4,2.4c0-2.7,0-5.3,0-8C8.8,4,7.2,4,5.6,4 C5.6,6.7,5.6,9.3,5.6,12z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+                ARTICLE</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ..................................................................................................... -->
+
+    <div class="third-main ">
+      <div class="b card bg-dark  text-white rounded-0">
+        <div class="b dark-overlay3"></div>
+        <img
+          
+          src="spherex-punch-sep-2.webp"
+          class="card-img  bg2-img"
+          alt="Background"
+        />
+        <div
+          class="card-img-overlay d-col justify-content-start align-items-center"
+        >
+          <div
+            id="main2"
+            class="d-flex flex-column margin-left margin-top pt-5 justify-content-center"
+          >
+            <div class="my-5">
+              <h1 class="display-1 lh-1 fw-bold">Cosmic</h1>
+              <h1 class="display-1 lh-1 fw-bold">Mapmaker</h1>
+            </div>
+            <p class="lh-2 fw-bold">
+              NASA’s newest astrophysics observatory, SPHEREx, is on its way to
+              study the<br />
+              origins of our universe and the history of galaxies. SPHEREx
+              lifted off at 11:10<br />
+              p.m. EDT on Tuesday, March 11, from Space Launch Complex 4 East
+              at<br />
+              Vandenberg Space Force Base in California.
+            </p>
+            <div class="col-6 d-flex justify-content-start align-items-end">
+              <h1
+                class="navbar-brand d-flex justify-content-end align-items-end bs-light-text-emphasis text-white fw-bold fs-5"
+                href="#"
+              >
+                Mission Updates&nbsp;
+                <svg
+                  class="svg1 mt-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="#c23939"
+                    d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                  />
+                </svg>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ..................................................................................................... -->
+
+    <div class="forth-main">
+      <div class="container px-5 w d-col">
+        <div class="container d-flex flex-wrap justify-content-start px-5">
+          <div class="col-md-6">
+            <h1
+              class="navbar-brand bs-light-text-emphasis text-black fw-bold fs-1"
+              href="#"
+            >
+              The Universe
+            </h1>
+          </div>
+
+          <div class="col-md-6 d-flex justify-content-end align-items-end">
+            <h1
+              class="navbar-brand d-flex justify-content-end align-items-end bs-light-text-emphasis text-black fw-bold fs-5"
+              href="#"
+            >
+              Discover More&nbsp;
+              <svg
+                class="svg1 mt-2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="#c23939"
+                  d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                />
+              </svg>
+            </h1>
+          </div>
+        </div>
+
+        <div class="container row d-flex flex-wrap flex-lg-nowrap justify-content-start px-5 gap-3">
+          <div class="col-md-3 col-sm-12 d-flex mt-5">
+            <div
+              class="d-flex card-img1"
+              style="background-image: url('card-img1.webp')"
+            >
+              <div
+                class="p-3 d-flex flex-column justify-content-end align-items-start w-100 h-100"
+              >
+                <div class="col-6 d-flex justify-content-start align-items-end">
+                  <h1
+                    class="navbar-brand d-flex justify-content-end align-items-end bs-light-text-emphasis text-white fw-bold fs-2 pb-4"
+                    href="#"
+                  >
+                    Galaxies&nbsp;
+                    <svg
+                      class="svg2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="#c23939"
+                        d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                      />
+                    </svg>
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12 d-flex mt-5">
+            <div
+              class="d-flex card-img1"
+              style="background-image: url('card-img2.webp')"
+            >
+              <div
+                class="p-3 d-flex flex-column justify-content-end align-items-start w-100 h-100"
+              >
+                <div class="col-6 d-flex justify-content-start align-items-end">
+                  <h1
+                    class="navbar-brand d-flex justify-content-end align-items-end bs-light-text-emphasis text-white fw-bold fs-2 pb-4"
+                    href="#"
+                  >
+                    Stars&nbsp;
+                    <svg
+                      class="svg2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="#c23939"
+                        d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                      />
+                    </svg>
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12 d-flex mt-5">
+            <div
+              class="d-flex card-img1"
+              style="background-image: url('card-img3.webp')"
+            >
+              <div
+                class="p-3 d-flex flex-column justify-content-end align-items-start w-100 h-100"
+              >
+                <div class="col-6 d-flex justify-content-start align-items-end">
+                  <h1
+                    class="navbar-brand d-flex justify-content-end align-items-end bs-light-text-emphasis text-white fw-bold fs-2 pb-4"
+                    href="#"
+                  >
+                    Exoplanets&nbsp;
+                    <svg
+                      class="svg2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="#c23939"
+                        d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                      />
+                    </svg>
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12 d-flex mt-5">
+            <div
+              class="d-flex card-img1"
+              style="background-image: url('card-img4.webp')"
+            >
+              <div
+                id="try"
+                class="p-3 d-flex flex-column justify-content-end align-items-start w-100 h-100"
+              >
+                <div class="col-6 d-flex justify-content-start align-items-end">
+                  <h1
+                    class="navbar-brand d-flex justify-content-end align-items-end bs-light-text-emphasis text-white fw-bold fs-2 pb-4"
+                    href="#"
+                  >
+                    Black Holes&nbsp;
+                    <svg
+                      class="svg2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="#c23939"
+                        d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                      />
+                    </svg>
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ..................................................................................................... -->
+
+    <div class="fifth-main">
+      <div class="c card bg-dark text-white rounded-0">
+        <div class="c dark-overlay3"></div>
+        <img
+          id="bg3-img"
+          src="bg-img-fifth-main.webp"
+          class="card-img"
+          alt="Background"
+        />
+        <div
+          class="card-img-overlay d-col justify-content-start align-items-center"
+        >
+          <div
+            id="main2"
+            class="d-flex flex-column margin-left margin-top pt-5 justify-content-center"
+          >
+            <div class="my-5">
+              <h1 class="display-1 lh-1 fw-bold">Earth</h1>
+              <h1 class="display-1 lh-1 fw-bold">Information</h1>
+              <h1 class="display-1 lh-1 fw-bold">Center</h1>
+            </div>
+            <p class="lh-4 fw-medium fs-5">
+              For more than 50 years, NASA satellites have provided data on
+              Earth's land,<br />
+              water, air, temperature, and climate. NASA's Earth Information
+              Center allows<br />
+              visitors to see how our planet is changing in six key areas: sea
+              level rise and<br />
+              coastal impacts, health and air quality, wildfires, greenhouse
+              gases,<br />
+              sustainable energy, and agriculture.
+            </p>
+            <div class="col-6 d-flex justify-content-start align-items-end">
+              <h1
+                class="navbar-brand d-flex justify-content-end align-items-end bs-light-text-emphasis text-white fw-bold fs-4"
+                href="#"
+              >
+                Start Exploring&nbsp;
+                <svg
+                  class="svg1 mt-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="#c23939"
+                    d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                  />
+                </svg>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ..................................................................................................... -->
+
+    <div class="sixth-main">
+      <div class="container row d-flex flex-wrap wv margin-top margin-left2">
+        <div class="col-md-4">
+          <div class="pb-3">
+            <span class="text-black bd">Today</span>
+            <h1
+              class="navbar-brand bs-light-text-emphasis text-black fw-bold fs-1"
+              href="#"
+            >
+              Image Of The Day
+            </h1>
+          </div>
+          <div class="pt-5">
+            <h1
+              class="navbar-brand d-flex justify-content-start align-items-center bs-light-text-emphasis text-black fw-semibold fs-4"
+              href="#"
+            >
+              Sun Rises on Crew-10 at Launch Pad
+            </h1>
+            <p class="lh-5 fw-normal fs-6">
+              A SpaceX Falcon 9 rocket with the company’s<br />
+              Dragon spacecraft on top is seen during sunrise on<br />
+              the launch pad at Launch Complex 39A at NASA’s<br />
+              Kennedy Space Center in Florida on Tuesday, March<br />
+              11, 2025, ahead of the agency’s SpaceX Crew-10<br />
+              launch. Crew-10 is the 10th crew rotation mission<br />
+              with SpaceX to the International Space Station as<br />
+              part of the agency’s Commercial Crew Program.<br />
+              Liftoff is targeted for 7:48 p.m. EDT on Wednesday,<br />
+              March 12, 2025.
+            </p>
+
+            <div class="col-6 d-flex justify-content-start align-items-end">
+              <h1
+                class="navbar-brand d-flex justify-content-end align-items-end bs-light-text-emphasis text-black fw-bold fs-5"
+                href="#"
+              >
+                Browse Image Archive&nbsp;
+                <svg
+                  class="svg3 mt-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="#c23939"
+                    d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                  />
+                </svg>
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div
+            class="d-flex card-img1"
+            style="background-image: url('sixth-img.webp')"
+          ></div>
+          <div class="d-flex justify-content-end align-items-end">
+            <h1
+              class="navbar-brand d-flex justify-content-end align-items-end bs-light-text-emphasis text-black fw-bold fs-6"
+              href="#"
+            >
+              View Image&nbsp;
+              <svg
+                class="svg3 mt-2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="#c23939"
+                  d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                />
+              </svg>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ..................................................................................................... -->
+
+    <div class="seventh-main">
+      <div class="col-12 margin-left2 pt-5">
+        <h1
+          class="navbar-brand bs-light-text-emphasis text-black fw-bold fs-1"
+          href="#"
+        >
+          More NASA Images
+        </h1>
+      </div>
+      <div class="d-flex flex-wrap flex-sm-nowrap gap-4 margin-left2 mt-5 margin-right">
+        <div class="d-flex  row gap-3 hw">
+          <div class="col-4 d-flex flex-column hw">
+            <div class="d-flex gap-1 hw hight">
+              <div class="col-8 hight">
+                <img class="hw" src="s-img1.webp" />
+              </div>
+              <div class="col-4 d-flex flex-column gap-1">
+                <div>
+                  <img class="hw img-h" src="s-img2.webp" />
+                </div>
+                <div>
+                  <img class="hw img-h" src="s-img3.webp" />
+                </div>
+              </div>
+            </div>
+            <h5 class="my-3 fw-bold">Earth Gallery</h5>
+            <span class="bd" style="color: #6c6b6b"> 15 IMAGES</span>
+          </div>
+        </div>
+
+        <div class="d-flex gap-3 hw">
+          <div class="col-4 d-flex flex-column hw ">
+            <div class="d-flex gap-1 hw hight">
+              <div class="col-8 hight">
+                <img class="hw" src="s2-img1.webp" />
+              </div>
+              <div class="col-4 d-flex flex-column gap-1 hight">
+                <div>
+                  <img class="hw img-h" src="s2-img2.jpg" />
+                </div>
+                <div>
+                  <img class="hw img-h" src="s2-img3.jpg" />
+                </div>
+              </div>
+            </div>
+            <h5 class="my-3 fw-bold">Earth's Moon Gallery</h5>
+            <span class="bd" style="color: #6c6b6b"> 33 IMAGES</span>
+          </div>
+        </div>
+        <div class="d-flex gap-3 hw">
+          <div class="col-4 d-flex flex-column hw">
+            <div class="d-flex gap-1 hw">
+              <div class="col-8 hight">
+                <img class="hw" src="s3-img1.jpg" />
+              </div>
+              <div class="col-4 d-flex flex-column gap-1 hight">
+                <div>
+                  <img class="hw img-h" src="s3-img2.webp" />
+                </div>
+                <div>
+                  <img class="hw img-h" src="s3-img3.webp" />
+                </div>
+              </div>
+            </div>
+            <h5 class="my-3 fw-bold">Sun Gallery</h5>
+            <span class="bd" style="color: #6c6b6b"> 32 IMAGES</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ..................................................................................................... -->
+    <div class="eighth-main">
+      <div class="d card bg-dark text-white rounded-0">
+        <img
+          id="bg4-img"
+          src="bg-img-eighth.webp"
+          class="card-img"
+          alt="Background"
+        />
+        <div
+          class="card-img-overlay d-col justify-content-start align-items-center"
+        >
+          <div
+            id="main3"
+            class="d-flex flex-column margin-left justify-content-center"
+          >
+            <div class="my-5">
+              <h1 class="display-3 lh-1 fw-bold">Explore the</h1>
+              <h1 class="display-3 lh-1 fw-bold">Universe from</h1>
+              <h1 class="display-3 lh-1 fw-bold">your Inbox</h1>
+            </div>
+            <p class="lh-1 fw-bold fs-6">
+              Stay up-to-date on the latest news from NASA–from Earth to<br />
+              the Moon, the Solar System and beyond.
+            </p>
+            <p class="lh-1 fw-normal fs-6">
+              We will never share your email address.<a
+                class="fw-normal fs-6 text-white"
+              >
+                Privacy Policy</a
+              >
+            </p>
+            <div class="col-6 d-flex justify-content-start align-items-end">
+              <h1
+                class="navbar-brand d-flex justify-content-end align-items-end bs-light-text-emphasis text-white fw-bold fs-4"
+                href="#"
+              >
+                Sign Up&nbsp;
+                <svg
+                  class="svg2 mt-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="#c23939"
+                    d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                  />
+                </svg>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ..................................................................................................... -->
+    <div class="ninth-main">
+      <div class="col-12 margin-left2 pt-5">
+        <h1
+          class="navbar-brand bs-light-text-emphasis text-black fw-bold fs-1"
+          href="#"
+        >
+          More Topics From NASA
+        </h1>
+      </div>
+      <div class="container  row d-flex flex-md-nowrap flex-wrap   justify-content-start px-5 gap-3 margin-left4">
+        <div class="col-md-3 col-sm-12 d-flex mt-5">
+          <div
+            class="d-flex card-img1"
+            style="background-image: url('n-m1.webp')"
+          >
+            <div
+              class="p-3 d-flex flex-column justify-content-end align-items-start w-100 h-100"
+            >
+              <div class="col-6 d-flex justify-content-start align-items-end">
+                <h1
+                  class="navbar-brand d-flex justify-content-end align-items-end bs-light-text-emphasis text-white fw-bold fs-2 pb-4"
+                  href="#"
+                >
+                  Missions&nbsp;
+                  <svg
+                    class="svg2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="#c23939"
+                      d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                    />
+                  </svg>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 d-flex mt-5">
+          <div
+            class="d-flex card-img1"
+            style="background-image: url('n-m2.webp')"
+          >
+            <div
+              class="p-3 d-flex flex-column justify-content-end align-items-start w-100 h-100"
+            >
+              <div class="col-6 d-flex justify-content-start align-items-end">
+                <h1
+                  class="navbar-brand d-flex justify-content-end align-items-end bs-light-text-emphasis text-white fw-bold fs-2 pb-4"
+                  href="#"
+                >
+                  Humen In<br />
+                  Space
+                  <svg
+                    class="svg2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="#c23939"
+                      d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                    />
+                  </svg>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 d-flex mt-5">
+          <div
+            class="d-flex card-img1"
+            style="background-image: url('n-m3.webp')"
+          >
+            <div
+              class="p-3 d-flex flex-column justify-content-end align-items-start w-100 h-100"
+            >
+              <div class="col-6 d-flex justify-content-start align-items-end">
+                <h1
+                  class="navbar-brand d-flex justify-content-end align-items-end bs-light-text-emphasis text-white fw-bold fs-2 pb-4"
+                  href="#"
+                >
+                  Climate <br />Change&nbsp;
+                  <svg
+                    class="svg2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="#c23939"
+                      d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                    />
+                  </svg>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 d-flex mt-5">
+          <div
+            class="d-flex card-img1"
+            style="background-image: url('n-m4.webp')"
+          >
+            <div
+              id="try"
+              class="p-3 d-flex flex-column justify-content-end align-items-start w-100 h-100"
+            >
+              <div class="col-6 d-flex justify-content-start align-items-end">
+                <h1
+                  class="navbar-brand d-flex justify-content-end align-items-end bs-light-text-emphasis text-white fw-bold fs-2 pb-4"
+                  href="#"
+                >
+                  Our Solar<br />System
+                  <svg
+                    class="svg2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="#c23939"
+                      d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                    />
+                  </svg>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container row d-flex flex-md-nowrap flex-wrap  justify-content-start px-5 gap-3 margin-left4">
+        <div class="col-md-3 d-flex mt-5">
+          <div
+            class="d-flex card-img1"
+            style="background-image: url('n-m5.webp')"
+          >
+            <div
+              class="p-3 d-flex flex-column justify-content-end align-items-start w-100 h-100"
+            >
+              <div class="col-6 d-flex justify-content-start align-items-end">
+                <h1
+                  class="navbar-brand d-flex justify-content-end align-items-end bs-light-text-emphasis text-white fw-bold fs-2 pb-4"
+                  href="#"
+                >
+                  Universe&nbsp;
+                  <svg
+                    class="svg2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="#c23939"
+                      d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                    />
+                  </svg>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex mt-5">
+          <div
+            class="d-flex card-img1"
+            style="background-image: url('n-m6.webp')"
+          >
+            <div
+              class="p-3 d-flex flex-column justify-content-end align-items-start w-100 h-100"
+            >
+              <div class="col-6 d-flex justify-content-start align-items-end">
+                <h1
+                  class="navbar-brand d-flex justify-content-end align-items-end bs-light-text-emphasis text-white fw-bold fs-2 pb-4"
+                  href="#"
+                >
+                  Science News&nbsp;
+                  <svg
+                    class="svg2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="#c23939"
+                      d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                    />
+                  </svg>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex mt-5">
+          <div
+            class="d-flex card-img1"
+            style="background-image: url('n-m7.webp')"
+          >
+            <div
+              class="p-3 d-flex flex-column justify-content-end align-items-start w-100 h-100"
+            >
+              <div class="col-6 d-flex justify-content-start align-items-end">
+                <h1
+                  class="navbar-brand d-flex justify-content-end align-items-end bs-light-text-emphasis text-white fw-bold fs-2 pb-4"
+                  href="#"
+                >
+                  Aeronautics&nbsp;
+                  <svg
+                    class="svg2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="#c23939"
+                      d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                    />
+                  </svg>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex mt-5">
+          <div
+            class="d-flex card-img1"
+            style="background-image: url('n-m8.webp')"
+          >
+            <div
+              id="try"
+              class="p-3 d-flex flex-column justify-content-end align-items-start w-100 h-100"
+            >
+              <div class="col-6 d-flex justify-content-start align-items-end">
+                <h1
+                  class="navbar-brand d-flex justify-content-end align-items-end bs-light-text-emphasis text-white fw-bold fs-2 pb-4"
+                  href="#"
+                >
+                  Technology&nbsp;
+                  <svg
+                    class="svg2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="#c23939"
+                      d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                    />
+                  </svg>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ..................................................................................................... -->
+
+    <section id="footer" class="bg-black">
+      <div class="margin-left3">
+        <footer
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border-top"
+        >
+          <div class="w-100 mb-5">
+            <div
+              id="logoo"
+              class="grid-col-2 display-flex flex-justify-center flex-align-center"
+            >
+              <a
+                id="header-logo"
+                href="#"
+                class="usa-logo tablet:display-block margin-0"
+                style="width: 60px"
+              >
+                <img
+                  fetchpriority="high"
+                  width="60"
+                  height="50.58"
+                  alt="NASA Logo"
+                  src="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo@2x.png"
+                  srcset="
+                    https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg
+                  "
+                />
+              </a>
+            </div>
+          </div>
+          <div class="w-100 d-flex flex-nowrap flex-sm-wrap justify-content-start">
+            <div class="mb-3 d-flex flex-column wf">
+              <h1
+                class="navbar-brand d-flex justify-content-start align-items-end bs-light-text-emphasis text-white fw-bold fs-4"
+                href="#"
+              >
+                National Aeronautics and Space <br />Administration
+              </h1>
+              <p style="color: #9c9b9b">
+                NASA explores the unknown in air and space,<br />
+                innovates for the benefit of humanity, and inspires<br />
+                the world through discovery.
+              </p>
+              <a href="#" class="nav-link p-0 text-white hov"
+                >About NASA's Mission</a
+              >
+              <div class="col-6 d-flex justify-content-start align-items-end">
+                <h1
+                  class="navbar-brand d-flex justify-content-end align-items-end bs-light-text-emphasis text-white fw-bold fs-5"
+                  href="#"
+                >
+                  Join Us&nbsp;&nbsp;
+                  <svg
+                    class="svg2 mt-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="#c23939"
+                      d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"
+                    />
+                  </svg>
+                </h1>
+              </div>
+            </div>
+<div class="d-flex flex-nowrap flex-sm-wrap">
+            <div class="we   mb-3">
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white hov">Home</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white hov"
+                    >News & Events</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white hov">Multimedia</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white hov"
+                    >NASA+
+                    <button
+                      type="button"
+                      class="btn btn-outline-danger text-white p-1 py-0 fw-lighter mb-1"
+                    >
+                      Live
+                    </button></a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white hov">Missions</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="we mb-3">
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white hov"
+                    >Humans in Space</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white hov">Earth</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white hov"
+                    >The Solar System</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white hov"
+                    >The Universe</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white hov">Science</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="we mb-3">
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white hov"
+                    >Aeronautics</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white hov">Technology</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white hov"
+                    >Learning Resources</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white hov">About NASA</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white hov"
+                    >NASA en Español</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="we mb-3">
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <h1
+                    class="navbar-brand d-flex justify-content-start align-items-end bs-light-text-emphasis fw-bold fs-5"
+                    href="#"
+                    style="color: #848484"
+                  >
+                    Follow NASA
+                  </h1>
+                </li>
+                <li class="nav-item mb-2">
+                  <i
+                    class="fa-brands fa-facebook-f fa-lg"
+                    style="color: #ffffff"
+                  ></i>
+                  <i
+                    class="fa-brands fa-instagram fa-lg margin-left3"
+                    style="color: #ffffff"
+                  ></i>
+                  <i
+                    class="fa-brands fa-x-twitter fa-lg margin-left3"
+                    style="color: #ffffff"
+                  ></i>
+                  <i
+                    class="fa-brands fa-youtube fa-lg margin-left3"
+                    style="color: #ffffff"
+                  ></i>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white hov"
+                    >More NASA Social Accounts</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white hov"
+                    >NASA Newsletters</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          </div>
+
+          <div class="w-100 border-top color">
+            <ul class="nav d-flex  margin-top2">
+              <li class="color hov">Sitemap</li>
+              <li class="margin-left4 color hov">For Media</li>
+              <li class="margin-left4 color hov">Privacy Policy</li>
+              <li class="margin-left4 color hov">FOIA</li>
+              <li class="margin-left4 color hov">No FEAR Act</li>
+              <li class="margin-left4 color hov">Office of the IG</li>
+              <li class="margin-left4 color hov">Budget & Annual Reports</li>
+              <li class="margin-left4 color hov">Agency Financial Reports</li>
+              <li class="margin-left4 color hov">Contact NASA</li>
+              <li class="margin-left4 color hov">Accessibility</li>
+            </ul>
+            <ul class="nav d-flex flex-wrap margin-top2">
+              <li class="color">Page Last Updated: Mar 14, 2025</li>
+              <li class="margin-left4 color d-flex">
+                Page Editor:&nbsp;
+                <p>Ayham Aiady</p>
+              </li>
+              <li class="margin-left4 color">
+                Responsible NASA Official: Abigail Bowman
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
