@@ -98,6 +98,86 @@ let arr4=[1,2,3,'a'];
 
 
 
+let arrm=[1,2,3];
+// [1,2,2,4,3,6];
+// let result=arrm.flatMap((x)=>[x,x*2]);
+// console.log(result);
+
+// arr4.fill(0);
+// console.log(arr4);
+
+// arrm.fill(0,0,1);
+// console.log(arrm);
+
+
+
+
+//--------------------------------------------------------------------------------------------
+
+
+// (function(){
+//   console.log("hello");
+// })();
+
+// function fun1(a,b,operation){
+//   return console.log(operation(a,b));
+// }
+
+// const result=fun1(3,4,(x,y)=>x+y);
+// console.log(result);
+
+// fun1(10,20,(a,b)=>a+b);
+// fun1(10,20,function(a,b){return a*b});
+// fun1(10,20,function(a,b){return a-b});
+// fun1(10,20,function(a,b){return a/b});
+
+
+// let arr=[];
+
+// arr.filter((x)=>x>10);
+
+// function fun(callback){
+//   const array = ["Ali", "Sami", "Lina"];
+//   const name ="ayham";
+// let index=0;
+//   array.forEach((element)=>{
+//     callback(element,index,array);
+//     index++;
+//   });
+// }
+//  fun((name,index,arr) => {
+//   console.log(`Name: ${name}, Index: ${index}, Full array: [${arr}]`);
+//  });
+
+
+// function sum(...numbers){
+//  return numbers.reduce((a,b)=> a+b,0);
+// }
+
+// console.log(sum(1,2,3,4,6,4,8,6,4,6,7));
+
+
+// let arr=[1,5,6,8];
+// let arr2=["ss",...arr];
+// console.log(arr2);
+
+
+// function fun3(){
+//   console.log(arguments);
+// }
+// fun3(1,2,3);
+
+
+// let arr=['ayham'];
+// // arr.map((x,index)=>{
+// //   return {id:index,name:x};
+// // });
+// console.log(
+//   arr.map((x,index)=>{
+//     return {id:index,name:x};
+//   })
+// );
+
 
 
 
@@ -164,59 +244,59 @@ let arr4=[1,2,3,'a'];
 
 
 
-function vowel(x){
-    let vow=0;
-    if(x.includes('a')){
-        vow++;
-    } if(x.includes('u')){
-        vow++;
-    }  if(x.includes('e')){
-        vow++;
-    }  if(x.includes('o')){
-        vow++;
-    }  if(x.includes('i')){
-        vow++;
-    } 
-return vow;
-}
-let v="auieor";
-console.log(vowel(v));
+// function vowel(x){
+//     let vow=0;
+//     if(x.includes('a')){
+//         vow++;
+//     } if(x.includes('u')){
+//         vow++;
+//     }  if(x.includes('e')){
+//         vow++;
+//     }  if(x.includes('o')){
+//         vow++;
+//     }  if(x.includes('i')){
+//         vow++;
+//     } 
+// return vow;
+// }
+// let v="auieor";
+// console.log(vowel(v));
 
 
-let ar=[2,5,6,9,8];
+// let ar=[2,5,6,9,8];
 
-function EorO(x){
+// function EorO(x){
 
-    for(let i=0;i<x.length;i++){
-        if(x[i]%2===0){
-            console.log("even");
-        }else{
-            console.log("odd");
-        }
-    }
-}
+//     for(let i=0;i<x.length;i++){
+//         if(x[i]%2===0){
+//             console.log("even");
+//         }else{
+//             console.log("odd");
+//         }
+//     }
+// }
 
-console.log(EorO(ar));
-
-
+// console.log(EorO(ar));
 
 
 
-function FLW(x) {
-    let words = x.split(" ");
-    let longestWord = "";
+
+
+// function FLW(x) {
+//     let words = x.split(" ");
+//     let longestWord = "";
   
-    for (let word of words) {
-      if (word.length > longestWord.length) {
-        longestWord = word;
-      }
-    }
+//     for (let word of words) {
+//       if (word.length > longestWord.length) {
+//         longestWord = word;
+//       }
+//     }
   
-    return longestWord;
-  }
+//     return longestWord;
+//   }
   
   
-  console.log(FLW("I love JavaScript programming")); 
+//   console.log(FLW("I love JavaScript programming")); 
   
 
 
@@ -224,25 +304,25 @@ function FLW(x) {
 
 
 
-  function wierd(){
-    let fizz=0;
-let buzz=0;
-let fizzbuzz=0;
-for(let i=0;i<50;i++){
-fizz=i;
-buzz=i;
-fizzbuzz=i;
-if(fizzbuzz%5===0 && fizzbuzz%3===0){
-    console.log("fizzbuzz");
-} else if(fizz%3===0){
-console.log("fizz");
-    }else if(buzz%5===0){
-        console.log("buzz");
+//   function wierd(){
+//     let fizz=0;
+// let buzz=0;
+// let fizzbuzz=0;
+// for(let i=0;i<50;i++){
+// fizz=i;
+// buzz=i;
+// fizzbuzz=i;
+// if(fizzbuzz%5===0 && fizzbuzz%3===0){
+//     console.log("fizzbuzz");
+// } else if(fizz%3===0){
+// console.log("fizz");
+//     }else if(buzz%5===0){
+//         console.log("buzz");
 
-}
-  }
-}
-  wierd();
+// }
+//   }
+// }
+//   wierd();
 
 
 
@@ -269,44 +349,44 @@ console.log("fizz");
 //   }
 //   console.log(secm(arr6));
 
-function findSecondLargest(arr) {
-    if (arr.length < 2) {
-      return "Array must have at least two numbers";
-    }
+// function findSecondLargest(arr) {
+//     if (arr.length < 2) {
+//       return "Array must have at least two numbers";
+//     }
   
-    let largest = -Infinity;
-    let secondLargest = -Infinity;
+//     let largest = -Infinity;
+//     let secondLargest = -Infinity;
   
-    for (let num of arr) {
-      if (num > largest) {
-        secondLargest = largest;
-        largest = num;
-      } else if (num > secondLargest && num !== largest) {
-        secondLargest = num;
-      }
-    }
+//     for (let num of arr) {
+//       if (num > largest) {
+//         secondLargest = largest;
+//         largest = num;
+//       } else if (num > secondLargest && num !== largest) {
+//         secondLargest = num;
+//       }
+//     }
   
-    return secondLargest === -Infinity ? "No second largest number" : secondLargest;
-  }
+//     return secondLargest === -Infinity ? "No second largest number" : secondLargest;
+//   }
   
   
-  console.log(findSecondLargest([10, 5, 20, 8, 12])); 
+//   console.log(findSecondLargest([10, 5, 20, 8, 12])); 
 
 
 
-  function flattenArray(arr) {
-    let result = [];
+//   function flattenArray(arr) {
+//     let result = [];
   
-    for (let item of arr) {
-      if (Array.isArray(item)) {
-        result.push(...flattenArray(item)); // Recursively flatten nested arrays
-      } else {
-        result.push(item); // Add non-array elements directly
-      }
-    }
+//     for (let item of arr) {
+//       if (Array.isArray(item)) {
+//         result.push(...flattenArray(item)); // Recursively flatten nested arrays
+//       } else {
+//         result.push(item); // Add non-array elements directly
+//       }
+//     }
   
-    return result;
-  }
+//     return result;
+//   }
   
   
-  console.log(flattenArray([1, [2, [3, 4], 5], 6])); 
+//   console.log(flattenArray([1, [2, [3, 4], 5], 6])); 
