@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <section class="header">
+          <h1>My Calculator</h1>
+            <input id="display" type="text" />
+        </section>
+
+        <section class="buttons">
+            <button onclick="getNumber(1)">1</button>
+            <button onclick="getNumber(2)">2</button>
+            <button onclick="getNumber(3)">3</button>
+            <button onclick="getOperator('+')">+</button>
+
+            <button onclick="getNumber(4)">4</button>
+            <button onclick="getNumber(5)">5</button>
+            <button onclick="getNumber(6)">6</button>
+            <button onclick="getOperator('-')">-</button>
+
+            <button onclick="getNumber(7)">7</button>
+            <button onclick="getNumber(8)">8</button>
+            <button onclick="getNumber(9)">9</button>
+            <button onclick="getOperator('*')">*</button>
+
+           
+            <button onclick="getNumber(0)">0</button>
+            
+
+            <button onclick="calculateResult()">=</button>
+            <button onclick="getOperator('/')">/</button>
+            <button onclick="getOperator('%')">%</button>
+            <button onclick="clearDisplay()">ce</button>
+            <button onclick="deleteLast()">de</button>
+        </section>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="container">
+        <div class="calc">
+            <form>
+                <div class="display">
+                    <input type="text" id="display" name="display" readonly>
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="display.value = '' " class="op" >
+                    <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1) " class="op">
+                    <input type="button" value="." onclick="display.value += '.' " class="op">
+                    <input type="button" value="/" onclick="display.value += '/' " class="op">
+                </div>
+                <div>
+                    <input type="button" id="7" value="7" onclick="display.value += '7' " >
+                    <input type="button" id="8" value="8" onclick="display.value += '8' " >
+                    <input type="button" id="9" value="9" onclick="display.value += '9' " >
+                    <input type="button" id="*" value="*" onclick="display.value += '*' " class="op">
+                </div>
+                <div>
+                    <input type="button" id="4" value="4" onclick="display.value += '4' " >
+                    <input type="button" id="5" value="5" onclick="display.value += '5' " >
+                    <input type="button" id="6" value="6" onclick="display.value += '6' " >
+                    <input type="button" id="-" value="-" onclick="display.value += '-' " class="op">
+                </div>
+                <div>
+                    <input type="button" id="1" value="1" onclick="display.value += '1' " >
+                    <input type="button" id="2" value="2" onclick="display.value += '2' " >
+                    <input type="button" id="3" value="3" onclick="display.value += '3' " >
+                    <input type="button" id="+" value="+" onclick="display.value += '+' " class="op">
+                </div>
+                <div>
+                    <input type="button" id="00" value="00" onclick="display.value += '00' " >
+                    <input type="button" id="0" value="0" onclick="display.value += '0' " >
+                  
+                    <input type="button" id="=" value="=" onclick="calc()" class="op">
+                    <input type="button" id="%" value="%" onclick="display.value += '%' " class="op">
+                </div>
+              
+
+
+
+            </form>
+        </div>
+    </div>
+ -->
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
