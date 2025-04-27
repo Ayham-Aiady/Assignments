@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/styles/layout.css"/>
+    <link rel="stylesheet" href="/styles/contact.css"/> -->
+</head>
+<body>
+ <% if(randomName && randomName2){ %>
+<h1> <%= randomName %> <%= randomName2 %></h1>
+<% } %>
+   <form action="/submit" method="post">
+    <input type="submit" value="Generate Name">
+   </form>
+   
+
+  
+
+    <%- include("footer.ejs") %>
+</body>
+</html>
