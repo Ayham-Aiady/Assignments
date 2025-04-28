@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+  }
+  
+  header {
+    background-image: linear-gradient(to bottom, #bf6bd1, #a878d9, #9183dd, #7d8bdb, #6e92d6, #6c98d6, #6b9ed6, #6da4d5, #72addd, #77b5e5, #7dbeed, #82c7f5);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header a.btn {
+    background: white;
+    background-image: linear-gradient(to bottom, #4834ac, #483b9d, #524986, #4e5aa1, #6e92d6, #6c98d6, #6b9ed6, #6da4d5, #72addd, #77b5e5, #7dbeed, #82c7f5);
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  .post {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .post h2 {
+    margin-top: 0;
+  }
+  
+  .actions {
+    margin-top: 10px;
+  }
+  
+  .actions .btn.small {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  .actions .btn.danger {
+    background: #f44336;
+    color: white;
+  }
+  
+  .form input, .form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .form button {
+    padding: 10px 15px;
+    font-size: 16px;
+   background-image: linear-gradient(to bottom, #bf6bd1, #a878d9, #9183dd, #7d8bdb, #6e92d6, #6c98d6, #6b9ed6, #6da4d5, #72addd, #77b5e5, #7dbeed, #82c7f5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 24px;
+    }
+  }
+  

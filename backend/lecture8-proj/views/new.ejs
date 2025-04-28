@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create New Post</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Create a New Post</h1>
+    <a href="/" class="btn">Back to Home</a>
+  </header>
+
+  <main>
+    <form action="/posts" method="POST" class="form">
+      <input type="text" name="title" placeholder="Post Title" required>
+      <textarea name="content" placeholder="Post Content" rows="8" required></textarea>
+      <button type="submit" class="btn">Publish</button>
+    </form>
+  </main>
+
+</body>
+</html>
