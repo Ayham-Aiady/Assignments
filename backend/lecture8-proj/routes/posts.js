@@ -1,55 +1,42 @@
+
 import express from 'express';
 
 const router = express.Router();
-
-
-let posts = [
-  { id: 1, title: 'First Post', content: 'This is the content of the first post.' },
-  { id: 2, title: 'Second Post', content: 'Here is the content for the second post.' }
-];
-
+const posts = [];
 
 router.get('/', (req, res) => {
   res.render('home', { posts });
 });
 
-
-
-router.get('/new', (req, res) => {
+router.get('/posts/new', (req, res) => {
   res.render('new');
 });
 
-
-router.post('/', (req, res) => {
+router.post('/posts', (req, res) => {
   const { title, content } = req.body;
-  const newPost = { id: posts.length + 1, title, content };
-  posts.push(newPost);
-  res.redirect('/posts');
+  posts.push({ id: Date.now(), title, content });
+  res.redirect('/');
 });
 
-
-router.get('/:id/edit', (req, res) => {
-  const post = posts.find(p => p.id === parseInt(req.params.id));
-  if (!post) return res.redirect('/posts');
+router.get('/posts/:id/edit', (req, res) => {
+  const post = posts.find(p => p.id == req.params.id);
+  if (!post) return res.redirect('/');
   res.render('edit', { post });
 });
 
-
-router.post('/:id/edit', (req, res) => {
-  const { title, content } = req.body;
-  const post = posts.find(p => p.id === parseInt(req.params.id));
-  if (!post) return res.redirect('/posts');
-
-  post.title = title;
-  post.content = content;
-
-  res.redirect('/posts');
+router.post('/posts/:id/edit', (req, res) => {
+  const post = posts.find(p => p.id == req.params.id);
+  if (post) {
+    post.title = req.body.title;
+    post.content = req.body.content;
+  }
+  res.redirect('/');
 });
 
-
-router.post('/:id/delete', (req, res) => {
-  posts = posts.filter(post => post.id !== parseInt(req.params.id));
-  res.redirect('/posts');
+router.post('/posts/:id/delete', (req, res) => {
+  const index = posts.findIndex(p => p.id == req.params.id);
+  if (index !== -1) posts.splice(index, 1);
+  res.redirect('/');
 });
 
 export default router;
