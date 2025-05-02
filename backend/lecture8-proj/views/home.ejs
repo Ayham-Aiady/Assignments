@@ -7,22 +7,22 @@
 </head>
 <body>
   <header>
-    <h1>My Blog</h1>
-    <a href="/posts/new" class="btn">Create New Post</a>
+    <h1>Ayham's Blog</h1>
+    <a href="/posts/new" class="botn">Create New Post</a>
   </header>
 
   <main>
     <% if (posts.length === 0) { %>
-      <p>No posts yet. Start by creating one!</p>
+      <p>Start creating posts ...</p>
     <% } else { %>
       <% posts.forEach(post => { %>
         <div class="post">
           <h2><%= post.title %></h2>
           <p ><%= post.content %></p>
           <div class="actions">
-            <a href="/posts/<%= post.id %>/edit" class="btn small">Edit</a>
+            <a href="/posts/<%= post.id %>/edit" class="botn small">Edit</a>
             <form action="/posts/<%= post.id %>/delete" method="POST" style="display:inline;">
-              <button type="submit" class="btn small danger">Delete</button>
+              <button type="submit" class="botn small delete">Delete</button>
             </form>
           </div>
         </div>

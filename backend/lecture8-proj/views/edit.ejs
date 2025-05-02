@@ -8,14 +8,14 @@
 <body>
   <header>
     <h1>Edit Post</h1>
-    <a href="/" class="btn">Back to Home</a>
+    <a href="/" class="botn">Back to Home</a>
   </header>
 
   <main>
     <form action="/posts/<%= post.id %>/edit" method="POST" class="form">
       <input type="text" name="title" value="<%= post.title %>" required>
       <textarea name="content" rows="8" required><%= post.content %></textarea>
-      <button type="submit" class="btn">Update</button>
+      <button type="submit" class="botn">Update</button>
     </form>
   </main>
 
