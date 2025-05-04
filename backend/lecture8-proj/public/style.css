@@ -50,14 +50,25 @@ body {
     font-size: 14px;
   }
   
-  .actions .botn.delete {
-    background: #f44336;
-    color: white;
+ 
+  #del{
+      color: #eee;
+      padding: 7px 13px;
+      border: none;
+      border-radius: 1px;
+      background: #2c3e50;
+  }
+  #del:hover{
+    background: #c0392b;
+  }
+  #del:active{
+    background: #e74c3c;
   }
   .post p{
     overflow-wrap: break-word;
    
   }
+
   
   .form input, .form textarea {
    
