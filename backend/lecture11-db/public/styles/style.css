@@ -1,0 +1,158 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+#newPost {
+  display: inline-block;
+  margin-bottom: 20px;
+  background: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+ul#postList {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul#postList li {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+}
+
+ul#postList li h2 {
+  margin: 0 0 10px;
+}
+
+ul#postList li small {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+ul#postList li p {
+  margin: 10px 0;
+}
+
+a.edit,
+a.delete {
+  margin-right: 10px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+a.edit:hover {
+  color: #007bff;
+}
+
+a.delete:hover {
+  color: #dc3545;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button.full-width {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.full-width:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #newPost {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  ul#postList li {
+    padding: 10px 0;
+  }
+
+  button.full-width {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #newPost {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  a.edit,
+  a.delete {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+
+  form {
+    gap: 10px;
+  }
+
+  input[type="text"],
+  textarea,
+  button.full-width {
+    font-size: 0.95rem;
+  }
+}
